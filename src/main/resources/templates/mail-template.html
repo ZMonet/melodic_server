@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Melodic通行验证码</title>
+    <style>
+        @font-face {
+            font-family: Futura;
+            src: url('https://www.wereadthinker.cn/font/Futura-Blod.ttf');
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 40px 0;
+    margin: 40px auto;
+    box-shadow: 0 5px 20px 5px #f2f2f2;
+    border-radius: 10px;">
+        <div class="flex-item" style="
+        display: flex;
+        padding-left: 50px;
+        color: #888;">
+            <span>Akatsuki</span>
+        </div>
+        <div class="mail-hd" style="
+        padding: 40px 0 30px 0;display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;">
+            <div>
+                <img style="width: 100px;height: 100px;" src="https://www.wereadthinker.cn/images/logo.png"/>
+            </div>
+            <div style="font-family: Futura;font-size: 20px;">Melodic</div>
+        </div>
+        <div style="display: flex;flex-direction: column;padding: 0 50px;">
+            <div style="height: 1px;border-bottom: 1px solid #eee;margin: 20px 0;color: white;display: flex">-</div>
+        </div>
+        <div style="display: flex;flex-direction: column;padding: 40px 0;align-items: center;justify-content: center;">
+            <div id="verification_container" style="
+                display: flex;
+                width: 200px;
+                height: 80px;
+                background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+                line-height: 80px;
+                color: white;
+                font-family: Futura;
+                font-size: 30px;
+                border-radius: 5px;
+                box-shadow: 2px 0 25px 2px #f5e8bf;">
+                <span id="verification_code" style="margin: 0 auto;">132452</span>
+            </div>
+        </div>
+        <div style="display: flex;flex-direction: column;padding: 40px 50px 0px 50px;font-size: 20px;font-weight: bold;">
+            <div style="display: flex;">敬爱的<span id="user_email">2439**@qq.com</span></div>
+            <div style="display: flex;padding-top: 10px;color: #888;font-size: 16px;font-weight: normal;" id="mail_message">我们已经收到了您的注册请求，请在APP内输入上方的验证码完成注册</div>
+        </div>
+    </div>
+</body>
+</html>
